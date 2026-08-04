@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.sql
+assets/_reel-review/
+assets/_hero-trim-temp.mp4
