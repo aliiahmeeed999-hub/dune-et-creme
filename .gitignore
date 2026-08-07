@@ -1,4 +1,8 @@
 node_modules/
+vendor/
+.tools/
+.env
+.env.local
 .DS_Store
 Thumbs.db
 *.log

@@ -1,5 +1,13 @@
+# Block sensitive paths from public access
+<IfModule mod_authz_core.c>
+  <FilesMatch "^\.env">
+    Require all denied
+  </FilesMatch>
+</IfModule>
 RewriteEngine On
 RewriteBase /
+RewriteRule ^(?:lib|vendor)/ - [F,L]
+RewriteRule ^composer\.(json|lock)$ - [F,L]
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

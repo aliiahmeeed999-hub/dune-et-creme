@@ -1,0 +1,16 @@
+{
+  "name": "dune-et-creme/website",
+  "description": "Dune et Crème — contact form mailer",
+  "require": {
+    "php": ">=8.0",
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "DuneEtCreme\\": "lib/"
+    }
+  },
+  "scripts": {
+    "test:email": "php scripts/test-email.php"
+  }
+}

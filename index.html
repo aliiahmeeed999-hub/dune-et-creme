@@ -72,6 +72,8 @@
     }
     </script>
     <script type="module" crossorigin src="./assets/index-DlGdy9ni.js"></script>
+    <script src="./assets/contact-validation.js" defer></script>
+    <script src="./assets/contact-form.js" defer></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DFBb_0Cv.css">
     <style>
       #hero {
@@ -312,6 +314,66 @@
 
       #experience .section-savoir-image {
         object-position: center 42%;
+      }
+
+      /* Contact form — API wiring helpers */
+      #contact .contact-honeypot {
+        position: absolute !important;
+        left: -10000px !important;
+        top: auto !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+      }
+      #contact .contact-field-error {
+        margin: 0.35rem 0 0;
+        font-family: Montserrat, sans-serif;
+        font-size: 0.75rem;
+        color: #b42318;
+      }
+      #contact .contact-input-invalid {
+        border-color: #b42318 !important;
+      }
+      #contact .contact-form-banner {
+        margin-bottom: 0.75rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        font-family: Montserrat, sans-serif;
+        font-size: 0.875rem;
+      }
+      #contact .contact-form-banner.is-error {
+        background: #fef3f2;
+        color: #b42318;
+        border: 1px solid #fecdca;
+      }
+      #contact .contact-form-banner.is-success {
+        background: #ecfdf3;
+        color: #027a48;
+        border: 1px solid #abefc6;
+      }
+      #contact button[type="submit"].is-loading {
+        opacity: 0.75;
+        cursor: wait;
+      }
+      #contact .contact-form-success {
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        background: #f5efe6;
+        border: 1px solid #e8dfd2;
+        text-align: center;
+      }
+      #contact .contact-form-success-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.25rem;
+        color: #3b2317;
+        margin: 0 0 0.5rem;
+      }
+      #contact .contact-form-success-text {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.9rem;
+        color: #5c4638;
+        margin: 0;
       }
 
       #contact .contact-image-frame {
